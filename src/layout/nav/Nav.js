@@ -21,7 +21,7 @@ function Nav() {
         <img src='../../images/logo.jpg' alt='pic' />
       </div>
       <ul>
-        <NavLink className="nav_link" to="/" >Home</NavLink>
+        <NavLink className="nav_link" to="/">Home</NavLink>
         <NavLink className="nav_link" to="/about" >About</NavLink>
         <NavLink className="nav_link" to="/job" >Job Book</NavLink>
         <NavLink className="nav_link" to="/photo" >Photo</NavLink>
@@ -41,10 +41,10 @@ function Nav() {
       {
         close ? "" :
           <div className='mobile_menu' >
-            <NavLink className="nav_link" to="/" >Home</NavLink>
-            <NavLink className="nav_link" to="/about" >About</NavLink>
-            <NavLink className="nav_link" to="/job" >Job Book</NavLink>
-            <NavLink className="nav_link" to="/photo" >Photo</NavLink>
+            <NavLink className="nav_link" to="/" onClick={closeNav}>Home</NavLink>
+            <NavLink className="nav_link" to="/about" onClick={closeNav}>About</NavLink>
+            <NavLink className="nav_link" to="/job" onClick={closeNav}>Job Book</NavLink>
+            <NavLink className="nav_link" to="/photo" onClick={closeNav}>Photo</NavLink>
           </div>
       }
     </div>
